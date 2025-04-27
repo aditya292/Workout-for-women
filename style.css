@@ -1,0 +1,564 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom, #ffe0f0, #ffffff);
+  color: #5c5c5c;
+  line-height: 1.7;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2.8em;
+  color: #ff7eb9;
+}
+
+.quote {
+  font-family: "Dancing Script", cursive;
+  color: #a0526d;
+  font-size: 1.4em;
+  margin-top: 10px;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.exercise {
+  background: #fff0f6;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 16px rgba(255, 182, 193, 0.2);
+}
+
+.exercise h2 {
+  color: #ff69b4;
+  margin-bottom: 10px;
+}
+
+.exercise p {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+
+.exercise img {
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+/* home button */
+
+.floating-home-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff91b4;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 50%;
+  font-size: 1.8em;
+  box-shadow: 0 8px 20px rgba(255, 182, 193, 0.6);
+  text-align: center;
+  text-decoration: none;
+  z-index: 999;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.floating-home-button:hover {
+  background: #ff6f91;
+  transform: scale(1.1);
+}
+
+/* --------------- */
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #cc6699;
+  font-size: 1em;
+}
+
+/* Import beautiful font */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@400;600&display=swap");
+
+/* Already existing styles above */
+
+/* Homepage Specific */
+.main-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.main-header h1 {
+  font-size: 3em;
+  color: #ff69b4;
+  animation: fadeInDown 1s ease-out;
+}
+
+.subheading {
+  font-family: "Dancing Script", cursive;
+  color: #aa5d87;
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto 40px auto;
+  padding: 0 20px;
+}
+
+.day-card {
+  background: #ffe4ec;
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #cc3366;
+  font-size: 1.3em;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(255, 182, 193, 0.4);
+  transition: transform 0.3s, background 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.day-card span {
+  font-size: 0.9em;
+  color: #8a416b;
+  margin-top: 10px;
+}
+
+.day-card:hover {
+  background: #ffcce0;
+  transform: translateY(-8px);
+}
+
+.quotes-section {
+  text-align: center;
+  padding: 30px;
+  background: linear-gradient(135deg, #ffd6e5, #fff1f6);
+  border-radius: 20px;
+  margin: 0 auto 40px auto;
+  max-width: 900px;
+}
+
+.quotes-section h2 {
+  color: #ff6f91;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.quotes-section ul {
+  list-style: none;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.4em;
+  color: #a0526d;
+}
+
+.quotes-section li {
+  margin-bottom: 15px;
+}
+
+.main-footer {
+  text-align: center;
+  color: #bb6699;
+  font-size: 1em;
+  margin-top: 40px;
+  padding-bottom: 20px;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@400;600&display=swap");
+
+.important-notes {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.important-notes h2 {
+  color: #ff66a3;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  animation: fadeInDown 1s ease forwards;
+}
+
+.notes-box {
+  background: linear-gradient(135deg, #ffe6f0, #ffd9ec);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(255, 153, 204, 0.4);
+  display: inline-block;
+  max-width: 800px;
+  animation: floatUp 2s infinite alternate;
+}
+
+.notes-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.notes-box li {
+  font-size: 1.2em;
+  color: #5f5f5f;
+  margin: 15px 0;
+  position: relative;
+  padding-left: 30px;
+  text-align: left;
+}
+
+.notes-box li::before {
+  content: "✨";
+  position: absolute;
+  left: 0;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+/* warm up */
+
+/* -------- WARMUP PAGE STYLING --------- */
+/* -------- CLEAN WARMUP PAGE STYLING --------- */
+
+/* Header Section */
+header {
+  background: linear-gradient(135deg, #ffd9ec, #ffe6f0);
+  padding: 30px 10px;
+  text-align: center;
+  border-bottom: 2px solid #ffb3cc;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #ff66a3;
+  font-family: "Poppins", sans-serif;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #5f5f5f;
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Warmup List Layout */
+.warmup-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  padding: 30px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Each Warmup Box */
+.warmup {
+  background: #ffe6f0;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(255, 153, 204, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.warmup:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(255, 153, 204, 0.3);
+}
+
+.warmup h2 {
+  color: #ff66a3;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+.warmup p {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.warmup img {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 15px;
+  box-shadow: 0 4px 8px rgba(255, 192, 203, 0.3);
+}
+
+/* Home Button */
+
+/* Quote Styling */
+.quote {
+  margin-top: 40px;
+  background: #ffd9ec;
+  padding: 20px;
+  border-left: 5px solid #ff66a3;
+  font-size: 1.3em;
+  font-style: italic;
+  color: #5f5f5f;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(255, 192, 203, 0.3);
+}
+
+/* Styling for the "Yoga Benefits" Section */
+
+/* Styling for the "Yoga Benefits" Section with Gradient */
+.yoga-benefits {
+  background: linear-gradient(
+    135deg,
+    #ff7ab1,
+    #ff4785
+  ); /* Gradient from light purple to deep purple */
+  padding: 20px 30px;
+  border-radius: 10px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  margin-top: 40px;
+  font-family: "Arial", sans-serif;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Heading Style */
+.yoga-benefits h3 {
+  font-size: 1.6rem;
+  color: white; /* White text for contrast on the gradient background */
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+/* Styling for the benefits list */
+.yoga-benefits ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.yoga-benefits ul li {
+  font-size: 1.1rem;
+  color: #fff; /* White text for readability */
+  margin: 8px 0;
+  line-height: 1.7;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Hover Effect for List Items */
+.yoga-benefits ul li:hover {
+  color: #ffffff; /* Keep text white for a clean look */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Light white background on hover */
+  cursor: pointer;
+}
+
+/* Optional: Add some spacing to the last list item */
+.yoga-benefits ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* General styles for all pages */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+/* Page layout styles */
+main {
+  padding: 20px;
+}
+
+/* Styling for the exercise sections */
+.exercise {
+  margin-bottom: 30px;
+}
+
+/* Section titles (Day 1, Day 2, etc.) */
+h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Styling for paragraph text */
+p {
+  font-size: 1rem;
+  color: #555;
+}
+
+img {
+  width: 100%; /* Make images responsive */
+  height: auto;
+  border-radius: 5px;
+  margin-top: 10px;
+  max-width: 500px; /* Limit the max-width to avoid overflow */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Styling for the section containing benefits */
+.yoga-benefits {
+  background: linear-gradient(135deg, #ff7ab1, #ff4785);
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Heading Style for Benefits */
+.yoga-benefits h3 {
+  font-size: 1.6rem;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Benefits List Styling */
+.yoga-benefits ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.yoga-benefits ul li {
+  font-size: 1.1rem;
+  color: #fff;
+  margin: 8px 0;
+  line-height: 1.7;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.yoga-benefits ul li:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+/* Media Queries for Mobile Responsiveness */
+
+/* For devices smaller than 600px (phones) */
+@media (max-width: 600px) {
+  h2 {
+    font-size: 1.3rem; /* Smaller titles */
+  }
+
+  p {
+    font-size: 0.9rem; /* Smaller text */
+  }
+
+  .exercise {
+    padding: 15px;
+  }
+
+  .yoga-benefits h3 {
+    font-size: 1.4rem; /* Slightly smaller heading */
+  }
+
+  .yoga-benefits ul li {
+    font-size: 1rem; /* Adjust list item size for small screens */
+    padding: 8px;
+  }
+
+  img {
+    max-width: 90%; /* Allow images to fill more of the screen */
+  }
+
+  /* Stack Day 1 to Day 7 pages in a column layout */
+  main {
+    padding: 10px;
+  }
+}
+
+/* For devices between 601px and 992px (tablets) */
+@media (max-width: 992px) {
+  h2 {
+    font-size: 1.4rem; /* Adjust title size */
+  }
+
+  p {
+    font-size: 1rem; /* Keep text readable */
+  }
+
+  .exercise {
+    padding: 20px;
+  }
+
+  .yoga-benefits h3 {
+    font-size: 1.5rem; /* Slightly smaller heading for tablets */
+  }
+
+  .yoga-benefits ul li {
+    font-size: 1.1rem;
+  }
+
+  img {
+    max-width: 80%; /* Adjust image width on tablets */
+  }
+}
